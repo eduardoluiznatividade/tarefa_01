@@ -21,12 +21,13 @@ public class CandidatoService {
 		return (List<Candidato>)candidatoRepository.findAll();
 	}
 	
-	public List<Candidato> obterPorEleicao(Eleicao eleicao){
-		return null;
-	}
-	
 	public void excluir(Integer id) {
 		candidatoRepository.deleteById(id);
 	}
+
+	public Object findByEleicao(Integer idEleicao) {
+		return candidatoRepository.findAll();
+	}
+	
 
 }

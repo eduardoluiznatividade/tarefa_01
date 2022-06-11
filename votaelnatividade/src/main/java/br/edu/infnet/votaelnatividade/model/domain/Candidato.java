@@ -35,7 +35,7 @@ public class Candidato {
 	
 	//@Transient
 	@ManyToOne
-	@JoinColumn(name = "idCandidato")
+	@JoinColumn(name = "idEleicao")
 	private Eleicao eleicao;
 		
 	public Integer getId() {

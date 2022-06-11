@@ -23,8 +23,8 @@ public class CandidatoLoader implements ApplicationRunner{
 		
 		try {
 //			candidatoRepository.save(candidato);
-			candidatoService.incluir(candidato);
-			System.out.println("Candidato salvo");
+//			candidatoService.incluir(candidato);
+//			System.out.println("Candidato salvo");
 			
 		} catch (Exception e) {
 			System.out.println("Erro ".concat(e.getMessage()));

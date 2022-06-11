@@ -29,7 +29,7 @@ public class Eleicao {
 	
 	//@Transient
 	@OneToMany(cascade = CascadeType.REMOVE, orphanRemoval = true)
-	@JoinColumn(name = "idCandidato")
+	@JoinColumn(name = "idEleicao")
 	private List<Candidato> candidatos;
 	
 	//@Transient

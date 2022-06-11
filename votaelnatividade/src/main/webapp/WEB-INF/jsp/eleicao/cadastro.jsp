@@ -14,12 +14,7 @@
 	<div class="container mt-3">
 	  <h2>Cadastramento de Eleição</h2>
 	 
-	  <form action="/candidato/incluir" method="post">
-	    <div class="mb-3 mt-3">
-	      <label>Data:</label>
-	      <input type="date" class="form-control" placeholder="Entre com a data" name="data" value="">
-	    </div>
-
+	  <form action="/eleicao/incluir" method="post">
 	    <div class="mb-3 mt-3">
 	      <label>Descrição:</label>
 	      <input type="text" class="form-control" placeholder="Entre com a descrição" name="descricao" value="eleicao">

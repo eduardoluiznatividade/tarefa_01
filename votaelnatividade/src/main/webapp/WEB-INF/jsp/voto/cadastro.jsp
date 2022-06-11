@@ -14,17 +14,26 @@
 	<div class="container mt-3">
 	  <h2>Cadastramento de Voto</h2>
 	 <form action="/candidato/incluir" method="post">
-	    <div class="form-group">
-		  	<c:if test="${not empty eleitores}">
-		  	<label>Eleitor</label>
-		  	<select class="form-control" name="eleitor.id">
-		    	<c:forEach var="e" items="${eleitores}">
-		    		<option value="${e.id}">${e.nome}</option>
-		    	</c:forEach>
-		  	</select>
+	 	 <div class="form-group">
+	    	<c:if test="${not empty eleitores}">
+			  	<label>Eleitor</label>
+			  	<select class="form-control" name="eleitor.id">
+			    	<c:forEach var="e" items="${eleitores}">
+			    		<option value="${e.id}">${e.nome}</option>
+			    	</c:forEach>
+			  	</select>
 		  	</c:if>
 		</div>
-
+		<div class="form-group">
+	    	<c:if test="${not empty candidatos}">
+			  	<label>Candidatos</label>
+			  	<select class="form-control" name="candidato.id">
+			    	<c:forEach var="c" items="${candidatos}">
+			    		<option value="${c.id}">${c.nome}</option>
+			    	</c:forEach>
+			  	</select>
+		  	</c:if>
+		</div>
 	    <div class="mb-3 mt-3">
 	      <label>Localização:</label>
 	      <input type="text" class="form-control" placeholder="Entre com a descrição" name="localizacao" value="">

@@ -20,8 +20,8 @@ public class EleitorLoader implements ApplicationRunner {
 		
 		try {
 //			eleitorRepository.save(eleitor);
-			eleitorService.incluir(eleitor);
-			System.out.println("Eleitor salvo");
+//			eleitorService.incluir(eleitor);
+//			System.out.println("Eleitor salvo");
 			
 		} catch (Exception e) {
 			System.out.println("Erro ".concat(e.getMessage()));

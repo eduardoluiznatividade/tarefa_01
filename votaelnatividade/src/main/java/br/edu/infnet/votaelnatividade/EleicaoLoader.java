@@ -22,8 +22,8 @@ public class EleicaoLoader implements ApplicationRunner{
 		
 		try {
 //			eleicaoRepository.save(eleicao);
-			eleicaoService.incluir(eleicao);
-			System.out.println("Eleição salvo");
+//			eleicaoService.incluir(eleicao);
+//			System.out.println("Eleição salvo");
 			
 		} catch (Exception e) {
 			System.out.println("Erro ".concat(e.getMessage()));

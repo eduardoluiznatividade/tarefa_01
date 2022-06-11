@@ -16,13 +16,13 @@
 
 	  <form action="/voto" method="get">
 	  	<div class="form-group">
-		  	<c:if test="${not empty eleicoes}">
-		  	<label>Eleicoes</label>
-		  	<select class="form-control" name="eleitor.id">
-		    	<c:forEach var="e" items="${eleicoes}">
-		    		<option value="${e.id}">${e.descricao}</option>
-		    	</c:forEach>
-		  	</select>
+	  		<c:if test="${not empty eleicoes}">
+			  	<label>Eleições</label>
+			  	<select class="form-control" name="idEleicao">
+			    	<c:forEach var="e" items="${eleicoes}">
+			    		<option value="${e.id}">${e.descricao}</option>
+			    	</c:forEach>
+			  	</select>
 		  	</c:if>
 		</div>
 	    <button type="submit" class="btn btn-primary">Nova</button>

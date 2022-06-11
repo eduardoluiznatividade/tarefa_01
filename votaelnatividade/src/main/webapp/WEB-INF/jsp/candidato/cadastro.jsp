@@ -17,11 +17,12 @@
 	  <form action="/candidato/incluir" method="post">
 	  	<div class="mb-3 mt-3">
 	      <label>Eleição</label>
-	      <select class="form-control" name="eleicao">
+	      <select class="form-control" name="eleicoes.id">
 		    	<c:forEach var="e" items="${eleicoes}">
 		    		<option value="${e.id}">${e.descricao}</option>
 		    	</c:forEach>
-		  </select>
+		  	</select>
+		  
 	    </div>
 	    <div class="mb-3 mt-3">
 	      <label>Número:</label>

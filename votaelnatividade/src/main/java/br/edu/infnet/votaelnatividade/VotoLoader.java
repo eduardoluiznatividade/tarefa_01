@@ -22,8 +22,8 @@ public class VotoLoader implements ApplicationRunner{
 		
 		try {
 //			votoRepository.save(voto);
-			votoService.incluir(voto);
-			System.out.println("Voto salvo");
+//			votoService.incluir(voto);
+//			System.out.println("Voto salvo");
 			
 		} catch (Exception e) {
 			System.out.println("Erro ".concat(e.getMessage()));

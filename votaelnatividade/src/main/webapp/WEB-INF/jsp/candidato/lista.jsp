@@ -18,8 +18,8 @@
 	    <button type="submit" class="btn btn-primary">Nova</button>
 	  </form>
 	  
-	  <hr>
-	<c:if test="${not empty lista}">		
+	  	<hr>
+		<c:if test="${not empty lista}">		
 		<h2>Total de candidatos: ${lista.size()}</h2>
 		  
 		<table class="table table-striped">
@@ -37,8 +37,8 @@
 			      <tr>
 			        <td>${c.id}</td>
 			        <td>${c.numero}</td>
-			        <td>${b.nome}</td>
-			        <td>${b.eleicao.descricao}</td>
+			        <td>${c.nome}</td>
+			        <td>${c.eleicao.descricao}</td>
 			        <td><a href="/candidato/${c.id}/excluir">excluir</a></td>
 			      </tr>
 		      </c:forEach>		      
